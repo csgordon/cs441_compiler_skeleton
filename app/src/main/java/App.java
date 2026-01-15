@@ -261,7 +261,6 @@ class Parser {
                 ArrayList<Expression> args = new ArrayList<>();
                 while (tok.peek().getType() != TokenType.RIGHT_PAREN) {
                     Expression e = parseExpr();
-                    System.err.println("Parsed arg: "+e);
                     args.add(e);
                     // Now either a paren or a comma
                     Token punc = tok.peek();
