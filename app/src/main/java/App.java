@@ -165,6 +165,7 @@ class Tokenizer {
             case '-': current++; return new Operator('-');
             case '*': current++; return new Operator('*');
             case '/': current++; return new Operator('/');
+            case '=': current++; return new Operator('=');
             
             default:
                 if (Character.isDigit(text.charAt(current))) {
